@@ -31,6 +31,16 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
+val acceptanceTestSourceSet = sourceSets.create("acceptanceTest") {
+    compileClasspath += sourceSets.main.get().output
+    runtimeClasspath += output + compileClasspath
+}
+
+configurations[acceptanceTestSourceSet.implementationConfigurationName]
+    .extendsFrom(configurations.testImplementation.get())
+configurations[acceptanceTestSourceSet.runtimeOnlyConfigurationName]
+    .extendsFrom(configurations.testRuntimeOnly.get())
+
 kotlin {
     jvmToolchain(21)
 }
@@ -40,6 +50,15 @@ application {
 }
 
 tasks.test {
+    useJUnitPlatform()
+}
+
+tasks.register<Test>("acceptanceTest") {
+    description = "Runs API acceptance tests against a real PostgreSQL database."
+    group = LifecycleBasePlugin.VERIFICATION_GROUP
+    testClassesDirs = acceptanceTestSourceSet.output.classesDirs
+    classpath = acceptanceTestSourceSet.runtimeClasspath
+    shouldRunAfter(tasks.test)
     useJUnitPlatform()
 }
 

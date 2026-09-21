@@ -35,3 +35,15 @@ See [TRAVEL_DEVELOPMENT.md](TRAVEL_DEVELOPMENT.md) for the full offline workflow
 From the repository page, select **Code → Codespaces → Create codespace on main**. The checked-in development container provisions Java 21, Node 24, and a persistent PostgreSQL 18 database, then installs frontend dependencies and runs the backend tests.
 
 Inside the codespace, start the backend and frontend in separate terminals using the same commands shown above. Codespaces forwards the game and API ports automatically.
+
+## Tests
+
+Fast backend tests and the PostgreSQL-backed acceptance task are separate:
+
+```powershell
+cd backend
+.\gradlew.bat test
+.\gradlew.bat acceptanceTest
+```
+
+The acceptance task requires `PHANTOM_DB_URL`, `PHANTOM_DB_USER`, and `PHANTOM_DB_PASSWORD`. Run the browser acceptance journey from `frontend` with `npm run test:e2e`. GitHub Actions supplies an isolated PostgreSQL service and runs the complete suite on every push and pull request.

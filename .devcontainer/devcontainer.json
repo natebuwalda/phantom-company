@@ -17,7 +17,7 @@
       "label": "API"
     }
   },
-  "postCreateCommand": "npm --prefix frontend ci && ./backend/gradlew --project-dir backend test",
+  "postCreateCommand": "npm --prefix frontend ci && cd frontend && npx playwright install --with-deps chromium && cd .. && ./backend/gradlew --project-dir backend test",
   "customizations": {
     "vscode": {
       "extensions": [
