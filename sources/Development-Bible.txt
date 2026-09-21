@@ -1,0 +1,382 @@
+# Phantom Company
+
+## Design Bible v0.2
+
+### Minimum Viable Fun & Product Vision
+
+---
+
+# Vision
+
+**Phantom Company** is a guild management RPG set in a dungeonpunk fantasy world where players build an adventuring guild rather than a single hero.
+
+The player is not an adventurer.
+
+The player is the institution behind the adventurers.
+
+Heroes come and go.
+
+Guilds endure.
+
+Success is measured not by assembling the strongest party, but by building an organization whose philosophy allows it to recognize opportunities that other guilds overlook.
+
+---
+
+# Setting
+
+Centuries ago, explorers discovered an impossible chasm beneath the world.
+
+Within it drifted a supernatural mist known as **The Deep Fog**.
+
+The deeper one travels into the Fog, the stranger reality becomes.
+
+Entire ecosystems exist within its layers.
+
+Ancient civilizations, forgotten ruins, impossible monsters, and miraculous artifacts lie hidden below.
+
+The first guild to descend into the Deep Fog never returned.
+
+Known today only as **The Phantom Company**, its members began appearing throughout later expeditions.
+
+Sometimes they guided lost explorers.
+
+Sometimes they rescued doomed parties.
+
+Sometimes they slaughtered entire guilds without explanation.
+
+No one agrees whether they are alive, dead, cursed, immortal, or something stranger.
+
+Every guild entering the Deep Fog hopes to uncover the truth.
+
+Every guild believes they will succeed where the Phantom Company failed.
+
+---
+
+# The Guild Economy
+
+Civilization has reorganized around exploration.
+
+Settlements exist along the stable edge of the first layer of the Deep Fog.
+
+Guilds recruit adventurers, fulfill contracts, recover relics, map new routes, rescue lost expeditions, and trade discoveries.
+
+A guild's prestige is measured by **Guild Level**.
+
+Guild Level is not experience.
+
+It represents the deepest verified layer of the Deep Fog successfully explored by that guild.
+
+Higher Guild Levels unlock:
+
+* deeper expeditions
+* greater prestige
+* better recruits
+* more influential contracts
+* access to increasingly valuable relics
+
+The deepest layers remain largely unknown.
+
+---
+
+# Core Design Philosophy
+
+## The Guild Is the Build
+
+The guild is the player's primary character.
+
+Heroes are valuable assets.
+
+Facilities, doctrines, staff, relics, and reputation are the player's long-term progression.
+
+---
+
+## Everything Has Value
+
+Nothing should be universally good or bad.
+
+The same hero, relic, mission, or contract should have different value depending on the guild's philosophy.
+
+A broken veteran may be worthless to one guild and priceless to another.
+
+---
+
+## Buildcraft Over Optimization
+
+Players should constantly ask:
+
+> "What if I built around this?"
+
+rather than
+
+> "Which number is biggest?"
+
+The most exciting upgrades should bend rules rather than increase statistics.
+
+---
+
+## Institutions Shape Heroes
+
+Heroes become exceptional because of the guild that trains, equips, supports, and believes in them.
+
+The game tells stories about organizations.
+
+---
+
+# Minimum Viable Fun
+
+The first playable prototype must answer one question:
+
+> Do different guild philosophies create different decisions when presented with the same heroes and opportunities?
+
+If three guilds consistently value identical markets differently, the core vision is validated.
+
+---
+
+# Core Gameplay Loop
+
+1. Review available heroes, equipment, and contracts.
+2. Expand and customize the guild.
+3. Assemble an expedition.
+4. Resolve an encounter.
+5. Return with rewards, injuries, and discoveries.
+6. Invest in the guild.
+7. Repeat.
+
+---
+
+# Guild Progression
+
+Every guild is composed of persistent organizational elements.
+
+## Heroes
+
+Temporary assets.
+
+Heroes level, gain experience, suffer injuries, develop loyalty, and eventually retire or perish.
+
+Heroes are intentionally replaceable.
+
+The guild is not.
+
+---
+
+## Facilities
+
+Facilities define what a guild is capable of doing.
+
+Facilities function as **Doctrine Sockets**.
+
+Initial prototype facilities:
+
+* Barracks
+* Trophy Hall
+* Hospital
+
+Every guild can construct every facility.
+
+Each guild specialization enhances one facility.
+
+---
+
+## Doctrines
+
+Doctrines are the operational philosophy of the guild.
+
+Rather than passive bonuses, doctrines establish rules under which the guild operates.
+
+They function similarly to build-defining skill gems.
+
+Prototype doctrines:
+
+* Regimen
+* Party
+* Succor
+
+The same doctrine may behave differently depending on which facility it occupies.
+
+---
+
+## Staff
+
+Staff are permanent professionals employed by the guild.
+
+They do not participate directly in expeditions.
+
+Instead they modify doctrines and facilities.
+
+Prototype staff:
+
+* Veteran
+* Quartermaster
+* Chirurgeon
+
+---
+
+## Relics
+
+Relics represent the history and culture of the guild.
+
+Prototype relics:
+
+* Statue
+* Skull
+* Banner
+
+Relics further modify the effects of doctrines and facilities.
+
+---
+
+# Organizational Resources
+
+## Gold
+
+Operational currency.
+
+Used to recruit heroes, purchase equipment, heal injuries, and improve the guild.
+
+---
+
+## Reputation
+
+Public perception.
+
+Reputation is generally not spent.
+
+Instead it unlocks:
+
+* higher quality recruits
+* prestigious contracts
+* influential patrons
+* rare opportunities
+
+Future guild types, such as Diplomacy, may deliberately risk or leverage Reputation.
+
+---
+
+## Renown
+
+Internal organizational prestige.
+
+Renown is earned through accomplishments.
+
+Renown unlocks:
+
+* new doctrines
+* organizational traits
+* facility improvements
+* deeper specialization
+
+---
+
+# Initial Guild Specializations
+
+## Training Guild
+
+Core belief:
+
+Potential is undervalued.
+
+Primary Facility:
+
+Barracks
+
+Primary axis manipulated:
+
+Potential
+
+---
+
+## Raiding Guild
+
+Core belief:
+
+Immediate strength creates opportunity.
+
+Primary Facility:
+
+Trophy Hall
+
+Primary axis manipulated:
+
+Risk
+
+---
+
+## Rehab Guild
+
+Core belief:
+
+Broken heroes are overlooked assets.
+
+Primary Facility:
+
+Hospital
+
+Primary axis manipulated:
+
+Time
+
+---
+
+# Future Guild Philosophies
+
+Future guild identities should manipulate unique axes of the game rather than simply generating more resources.
+
+Examples include:
+
+Crafting → Items
+
+Diplomacy → Reputation
+
+Exploration → Information
+
+Future specializations should continue expanding this design philosophy.
+
+---
+
+# Technical MVF Scope
+
+Prototype with:
+
+* Three guild specializations
+* One Hero class
+* Static hero market
+* Simple equipment
+* Single abstract encounter system
+* Three facilities
+* Three doctrines
+* Three staff types
+* Three relic types
+* Gold
+* Reputation
+* Renown
+
+Explicitly excluded:
+
+* Hero classes
+* Player trading
+* Tactical grid combat
+* Crafting
+* Complex dungeon generation
+* Multiplayer economy
+* Seasonal play
+* Hero transfer between guilds
+* Resurrection systems
+
+These systems should only be introduced after the core gameplay thesis has been validated.
+
+---
+
+# Design Principles
+
+Every permanent progression system should answer at least one question:
+
+* What rule does this change?
+* What decision does this create?
+* How does this change what the player values?
+
+If a feature does none of these, it should be reconsidered.
+
+The objective is not to create the strongest guild.
+
+The objective is to create a guild whose philosophy changes how the player sees the world.

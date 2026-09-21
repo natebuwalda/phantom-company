@@ -1,0 +1,24 @@
+# Local Codex/project metadata
+.qa/
+AGENTS.md
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Frontend output and dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Backend output and Gradle state
+backend/.gradle/
+backend/build/
+
+# Editor and operating-system files
+.idea/
+.vscode/
+*.iml
+*.log
+.DS_Store
+Thumbs.db

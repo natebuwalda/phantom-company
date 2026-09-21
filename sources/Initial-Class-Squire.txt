@@ -1,0 +1,50 @@
+# Initial Hero Class
+
+## Squire
+
+The first prototype Hero class is **Squire**.
+
+Squire is the foundational adventurer class.
+
+It represents inexperienced recruits, militia trainees, retainers, and aspiring heroes who have not yet developed into more specialized roles.
+
+Every Squire gains the following bonus Enhancement:
+
+> **Throw Rock**
+> This hero may perform a combat action without a Weapon equipped.
+
+Throw Rock is granted by the Squire class and does not count against the hero’s limit of two acquired Enhancements.
+
+Throw Rock ensures that a Squire remains capable of contributing to combat after unequipping a Weapon or when assigned two non-Weapon Equipment cards.
+
+It also establishes an initial distinction between:
+
+* actions available to all heroes
+* actions granted by Class
+* actions enabled or improved by Equipment
+
+The ability should remain intentionally modest.
+
+Throw Rock prevents complete helplessness without making Weapons unnecessary.
+
+---
+
+# Class Enhancements
+
+Classes may grant one or more bonus Enhancements.
+
+Class Enhancements:
+
+* are printed as part of the Class
+* do not count against the hero’s two acquired Enhancement slots
+* remain available regardless of Equipment
+* establish the class’s basic mechanical identity
+
+Classes should initially provide only a small number of simple rules.
+
+The purpose of Class is to create recognizable starting behavior without turning each class into a complete character subsystem.
+
+For the prototype:
+
+> **Squire**
+> Bonus Enhancement: Throw Rock

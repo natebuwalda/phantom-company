@@ -1,0 +1,557 @@
+# Heroes and Equipment
+
+Heroes should be nearly as simple and readable as creature cards in a collectible card game.
+
+A hero is not intended to function as a traditional RPG character sheet.
+
+The hero card should communicate:
+
+* recruitment cost
+* class
+* core strengths
+* areas of specialization
+* acquired advantages
+* persistent complications
+
+Most long-term build complexity should come from the guild and the relationships between cards rather than from adding more statistics to individual heroes.
+
+---
+
+# Hero Card Structure
+
+A hero card uses the following visual hierarchy:
+
+1. Recruitment Cost
+2. Hero Name
+3. Portrait
+4. Class
+5. Core Statistics and Specializations
+6. Enhancements
+7. Drawbacks
+
+Recruitment Cost appears in the upper corner of the card, occupying the position normally used for mana cost in a collectible card game.
+
+The center of the card is dominated by the hero's portrait.
+
+The rules area beneath the portrait contains:
+
+> **Class**
+>
+> **Capability # — Specialization**
+> **Control # — Specialization**
+> **Stamina # — Specialization**
+>
+> **Enhancements**
+> **Drawbacks**
+
+This structure should allow the player to understand the broad value of a hero at a glance.
+
+---
+
+# Core Hero Statistics
+
+Every hero has three core statistics.
+
+## Capability
+
+Capability measures the hero's ability to make progress and actively solve problems.
+
+Depending on the situation, Capability may represent:
+
+* physical force
+* speed
+* magical power
+* technical knowledge
+* persuasion
+* leadership
+* medical skill
+
+Capability describes how much the hero can accomplish.
+
+---
+
+## Control
+
+Control measures the hero's ability to manage danger, uncertainty, and instability.
+
+Depending on the situation, Control may represent:
+
+* physical defense
+* precision
+* awareness
+* restraint
+* magical containment
+* tactical discipline
+* social composure
+
+Control describes how well the hero prevents a situation from deteriorating.
+
+---
+
+## Stamina
+
+Stamina measures the hero's ability to continue functioning under pressure.
+
+Depending on the situation, Stamina may represent:
+
+* physical endurance
+* mental resolve
+* courage
+* patience
+* resistance to corruption
+* resistance to exhaustion
+* general expedition readiness
+
+Stamina describes how much strain the hero can endure before becoming unable to continue.
+
+---
+
+# Contextual Interpretation
+
+The three statistics remain mechanically consistent across different kinds of encounters.
+
+Their narrative meaning changes according to the situation.
+
+During combat:
+
+* Capability may represent attacks and offensive action.
+* Control may represent defense and positioning.
+* Stamina may represent health and endurance.
+
+During exploration:
+
+* Capability may represent clearing obstacles or making progress.
+* Control may represent navigation and hazard management.
+* Stamina may represent fatigue and exposure.
+
+During negotiation:
+
+* Capability may represent persuasion or leadership.
+* Control may represent composure and reading the opposition.
+* Stamina may represent patience, confidence, and emotional resilience.
+
+Heroes therefore use a stable mechanical language even when encounters present very different problems.
+
+The detailed encounter system remains to be determined.
+
+---
+
+# Specializations
+
+Each core statistic has a branching tree of specializations.
+
+Specializations describe how a hero applies their statistics.
+
+They should not become additional numerical attributes.
+
+The statistic describes **how much** a hero can accomplish.
+
+The specialization describes **how** they accomplish it.
+
+Specialization trees are limited to a depth of two:
+
+1. Broad Specialization
+2. Focused Specialization
+
+A hero may possess only a broad specialization or may possess both a broad and focused specialization.
+
+Example:
+
+> **Capability 4 — Athletic: Strong**
+
+In this example:
+
+* Capability is the core statistic.
+* Athletic is the broad specialization.
+* Strong is the focused specialization.
+
+A hero could instead have:
+
+> **Capability 4 — Athletic**
+
+This hero is broadly athletic but has not developed or acquired a more focused identity within that branch.
+
+---
+
+# Initial Capability Specializations
+
+Capability represents active progress and problem-solving.
+
+## Athletic
+
+Physical action, movement, and bodily performance.
+
+Focused specializations:
+
+* Strong
+* Fast
+
+---
+
+## Arcana
+
+Interaction with supernatural forces, rituals, and metaphysical knowledge.
+
+Focused specializations:
+
+* Magic
+* Faith
+
+---
+
+## Charisma
+
+The ability to influence, inspire, persuade, or captivate others.
+
+Focused specializations:
+
+* Leadership
+* Charm
+
+---
+
+Additional Capability branches may later include areas such as Expertise, Craft, Lore, or Medicine.
+
+These should only be introduced when the game contains enough relevant decisions to support them.
+
+---
+
+# Control and Stamina Specializations
+
+Control and Stamina will use the same two-depth structure as Capability.
+
+Their final specialization trees remain to be designed.
+
+Potential Control concepts include:
+
+* Awareness
+* Precision
+* Discipline
+* Protection
+
+Potential Stamina concepts include:
+
+* Body
+* Mind
+* Spirit
+* Adaptation
+
+These are provisional directions rather than finalized branches.
+
+The initial prototype should include only enough specializations to test whether they meaningfully change hero valuation and expedition composition.
+
+---
+
+# Class
+
+Every hero has a Class.
+
+Class provides a recognizable fantasy identity and may eventually influence:
+
+* equipment interactions
+* available Enhancements
+* recruitment markets
+* training opportunities
+* party composition
+* guild doctrines
+
+Class should initially remain a light mechanical tag rather than a complete rules package.
+
+The prototype includes only one Hero class.
+
+Additional classes should not be introduced until the core statistic and specialization system has been validated.
+
+---
+
+# Enhancements
+
+Enhancements are persistent positive changes acquired by a hero.
+
+A hero may have no more than two Enhancements.
+
+Enhancements may represent:
+
+* specialized training
+* battlefield experience
+* magical blessings
+* mutations
+* equipment mastery
+* guild honors
+* exposure to relics
+* meaningful relationships
+* unusual discoveries
+
+Enhancements belong to the hero rather than to their equipment.
+
+They remain with the hero when equipment is reassigned.
+
+Examples:
+
+> **Caravan Veteran**
+> Gains additional Control during escort contracts.
+
+> **Fog-Touched**
+> May use Arcana when interacting with the Deep Fog.
+
+> **Natural Leader**
+> Leadership benefits other heroes in the expedition.
+
+Enhancements should ideally change how the player values or uses the hero rather than merely adding a universal numerical bonus.
+
+---
+
+# Drawbacks
+
+Drawbacks are persistent complications carried by a hero.
+
+A hero may have no more than two Drawbacks.
+
+Drawbacks replace the narrower category of Injuries.
+
+An injury may be a Drawback, but not every Drawback is an injury.
+
+Drawbacks may represent:
+
+* physical injuries
+* illness
+* trauma
+* destructive habits
+* personality conflicts
+* debts
+* criminal history
+* damaged reputation
+* supernatural corruption
+* difficult obligations
+
+Examples:
+
+> **Crushed Hand**
+> Strong cannot be applied to tasks requiring both hands.
+
+> **Fog-Sick**
+> Suffers additional strain during Deep expeditions.
+
+> **Wanted**
+> Creates risk during contracts involving authorities.
+
+> **Arrogant**
+> Resists support from lower-level heroes.
+
+Drawbacks are not intended to make heroes objectively worthless.
+
+They should create different valuations between guilds.
+
+A drawback that makes a hero unacceptable to one guild may create an opportunity for another.
+
+This is particularly important to the identity of the Rehab Guild, which recognizes value in heroes others consider damaged, unreliable, or difficult.
+
+---
+
+# Equipment Cards
+
+Equipment exists as separate cards rather than printed features on hero cards.
+
+Equipment functions similarly to artifact cards in a collectible card game.
+
+The guild owns Equipment independently of the heroes who use it.
+
+Equipment can therefore be:
+
+* purchased
+* stored
+* assigned
+* reassigned
+* improved
+* lost
+* damaged
+* built around by guild systems
+
+Separating heroes from Equipment reinforces the distinction between personnel and institutional resources.
+
+---
+
+# Generic Equipment Capacity
+
+Each hero has two generic Equipment slots.
+
+Equipment slots are not divided into fixed categories such as Weapon and Armor.
+
+Any legal combination of two Equipment cards may be assigned to a hero.
+
+Examples include:
+
+* two Daggers
+* Sword and Shield
+* Weapon and Armor
+* Armor and Tool
+* two magical Foci
+* two Tools
+* Banner and Shield
+
+This allows equipment combinations to express the hero's current role.
+
+A Thief equipped with two Daggers is configured aggressively.
+
+That same Thief may later exchange one Dagger for Light Armor when the expedition becomes more dangerous.
+
+Equipment restrictions, when necessary, should appear on the individual Equipment cards.
+
+Examples may eventually include:
+
+* Two-Handed
+* Bulky
+* Off-Hand
+* Class requirements
+* Specialization requirements
+
+A piece of Equipment may occupy both slots if its rules specify that it does so.
+
+---
+
+# Equipment State
+
+Equipment uses tapped and untapped states.
+
+## Tapped Equipment
+
+Tapped Equipment is assigned to a hero and currently equipped.
+
+Each tapped Equipment card occupies one of that hero's Equipment slots unless otherwise stated.
+
+## Untapped Equipment
+
+Untapped Equipment is available within the expedition's Equipment pool.
+
+It is not currently assigned to a hero and provides no benefit until tapped.
+
+The tapped state therefore represents commitment rather than temporary exhaustion.
+
+---
+
+# Expedition Equipment Pool
+
+An expedition may bring up to ten Equipment cards.
+
+These cards form the expedition's Equipment pool.
+
+The guild may own more Equipment than the expedition can carry.
+
+This creates three distinct layers of equipment management:
+
+## Guild Inventory
+
+All Equipment currently owned by the guild.
+
+## Expedition Pool
+
+Up to ten Equipment cards selected to accompany the expedition.
+
+## Hero Loadout
+
+Up to two Equipment cards currently tapped to a specific hero.
+
+The expedition pool limits logistical flexibility without requiring a detailed inventory simulation.
+
+---
+
+# Equipment During Activation
+
+Once during each hero Activation, that hero may:
+
+* untap up to one Equipment card currently assigned to them
+* tap up to one available Equipment card from the expedition pool to themselves
+
+These are separate allowances.
+
+A hero may therefore exchange one piece of Equipment during an Activation.
+
+Example:
+
+1. Untap one Dagger.
+2. Tap one Light Armor.
+
+The hero cannot replace their entire loadout during a single Activation.
+
+Equipment cannot be transferred directly from one hero to another while it remains tapped.
+
+It must first be untapped and returned to the expedition pool.
+
+---
+
+# Initial Loadouts
+
+At the beginning of an expedition, each hero enters with a default loadout of up to two Equipment cards already tapped to them.
+
+These initial assignments do not count against the hero's first Activation.
+
+The default loadout represents the equipment selected and prepared before the expedition begins.
+
+Once the expedition is underway, normal Equipment rules apply.
+
+---
+
+# Equipment Design
+
+Basic Equipment may provide direct bonuses to one of the three core statistics.
+
+Examples:
+
+> **Iron Sword**
+> +1 Capability
+
+> **Light Armor**
+> +1 Control
+
+> **Expedition Pack**
+> +1 Stamina
+
+More advanced Equipment should interact with specializations, classes, Enhancements, Drawbacks, or guild systems.
+
+Examples:
+
+> **Balanced Dagger**
+> Improves Capability when Athletic: Fast is relevant.
+
+> **Reliquary Censer**
+> Improves Control when Faith is used to contain supernatural danger.
+
+> **Captain's Standard**
+> Allows Leadership to support additional heroes.
+
+Equipment should create loadout decisions rather than merely form a ladder of increasingly large bonuses.
+
+The player should ask:
+
+> "Which equipment combination best supports this hero and this expedition?"
+
+rather than:
+
+> "Which item has the highest number?"
+
+---
+
+# Current Hero Model
+
+The current hero model consists of:
+
+* Recruitment Cost
+* Hero Name
+* Portrait
+* Class
+* Capability
+* Control
+* Stamina
+* One specialization line for each core statistic
+* Up to two Enhancements
+* Up to two Drawbacks
+* Two generic Equipment slots
+
+An expedition may bring up to ten Equipment cards.
+
+Each hero begins with a default loadout and may exchange one equipped item during each Activation.
+
+This model is intended to produce heroes that are immediately readable while still allowing meaningful differences in identity, history, and use.
+
+The hero card remains simple.
+
+The guild determines what that hero can become.

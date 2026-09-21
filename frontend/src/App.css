@@ -1,0 +1,160 @@
+.shell {
+  width: min(1180px, calc(100% - 40px));
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.masthead {
+  padding: 88px 0 56px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow, .step, .panel-label, .card-kicker {
+  margin: 0;
+  color: var(--muted);
+  font: 600 0.72rem/1.2 var(--sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 850px;
+  margin: 12px 0 14px;
+  color: var(--ink);
+  font: 500 clamp(3.4rem, 9vw, 7.5rem)/0.86 var(--display);
+  letter-spacing: -0.055em;
+}
+
+.lede {
+  max-width: 580px;
+  margin: 0;
+  color: var(--muted-bright);
+  font-size: 1.08rem;
+}
+
+.founding, .headquarters { padding: 54px 0 44px; flex: 1; }
+.section-heading { display: grid; gap: 7px; margin-bottom: 28px; }
+.section-heading h2 { margin: 0; color: var(--ink); font: 500 clamp(2rem, 4vw, 3.15rem)/1 var(--display); }
+.section-heading > p:last-child:not(.step) { margin: 0; color: var(--muted-bright); }
+
+.guild-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.guild-card {
+  min-height: 320px;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--muted-bright);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 150ms ease, background 150ms ease, transform 150ms ease;
+}
+
+.guild-card:hover { border-color: var(--line-bright); transform: translateY(-2px); }
+.guild-card.selected { border-color: var(--gold); background: linear-gradient(155deg, rgba(185, 142, 74, 0.12), transparent 55%), var(--surface); }
+.guild-card:focus-visible, .primary-action:focus-visible, .secondary-action:focus-visible { outline: 2px solid var(--gold-bright); outline-offset: 3px; }
+
+.card-mark {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 68px;
+  border: 1px solid var(--line-bright);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--gold-bright);
+  font: 500 0.8rem var(--display);
+}
+
+.guild-card strong { margin: 10px 0; color: var(--ink); font: 500 1.65rem/1 var(--display); }
+.belief { color: var(--gold-bright); font: italic 1rem var(--display); }
+.opportunity { margin-top: auto; padding-top: 24px; font-size: 0.88rem; line-height: 1.45; }
+
+.charter-bar {
+  margin-top: 14px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  background: var(--surface-deep);
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.charter-bar div { display: grid; gap: 3px; }
+.charter-bar span { color: var(--muted); font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.charter-bar strong { color: var(--ink); }
+
+.primary-action, .secondary-action {
+  border: 1px solid var(--gold);
+  border-radius: 3px;
+  font: 700 0.78rem var(--sans);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.primary-action { padding: 15px 22px; color: #17120c; background: var(--gold-bright); }
+.secondary-action { padding: 11px 16px; color: var(--gold-bright); background: transparent; }
+
+.dashboard { display: grid; grid-template-columns: 0.72fr 1.45fr 0.95fr; gap: 14px; }
+.panel { min-height: 280px; padding: 26px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); }
+.treasury-panel { display: flex; flex-direction: column; }
+.gold { margin: 10px 0 30px; color: var(--gold-bright); font: 500 2rem var(--display); }
+.resources { margin: auto 0 0; }
+.resources div, .components-panel li { padding: 11px 0; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; }
+.resources dt, .components-panel span { color: var(--muted); }
+.resources dd { margin: 0; color: var(--ink); font-weight: 700; }
+
+.hero-panel { display: grid; grid-template-columns: 118px 1fr; gap: 25px; }
+.portrait {
+  height: 156px;
+  border: 1px solid var(--line-bright);
+  background: radial-gradient(circle at 50% 30%, rgba(185, 142, 74, 0.28), transparent 32%), linear-gradient(145deg, #24221f, #11100f);
+  display: grid;
+  place-items: center;
+  color: var(--gold-bright);
+  font: 500 2.8rem var(--display);
+}
+
+.hero-panel h3 { margin: 9px 0 24px; color: var(--ink); font: 500 2rem var(--display); }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.stats span { padding: 13px 8px; border: 1px solid var(--line); color: var(--muted); font-size: 0.72rem; text-align: center; text-transform: uppercase; letter-spacing: 0.04em; }
+.stats b { display: block; margin-bottom: 4px; color: var(--ink); font: 500 1.45rem var(--display); }
+.enhancement { margin: 20px 0 0; color: var(--muted-bright); }
+.enhancement b { margin-right: 8px; color: var(--gold-bright); }
+.components-panel ul { margin: 28px 0 0; padding: 0; list-style: none; }
+.components-panel b { color: var(--ink); }
+
+.next-step { margin-top: 14px; padding: 16px 20px; border: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; color: var(--muted-bright); }
+.status-dot { width: 8px; height: 8px; margin-right: 10px; border-radius: 50%; background: #86a870; display: inline-block; box-shadow: 0 0 12px rgba(134, 168, 112, 0.55); }
+
+footer { padding: 22px 0 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; display: flex; justify-content: space-between; }
+
+@media (max-width: 860px) {
+  .masthead { padding-top: 58px; }
+  .guild-grid, .dashboard { grid-template-columns: 1fr; }
+  .guild-card { min-height: 245px; }
+  .card-mark { margin-bottom: 34px; }
+  .charter-bar { grid-template-columns: 1fr 1fr; }
+  .primary-action { grid-column: 1 / -1; }
+  .panel { min-height: auto; }
+}
+
+@media (max-width: 560px) {
+  .shell { width: min(100% - 24px, 1180px); }
+  .masthead { padding: 44px 0 34px; }
+  .founding, .headquarters { padding-top: 36px; }
+  .charter-bar, .hero-panel { grid-template-columns: 1fr; }
+  .portrait { width: 100%; }
+  .next-step { align-items: stretch; flex-direction: column; gap: 18px; }
+}
