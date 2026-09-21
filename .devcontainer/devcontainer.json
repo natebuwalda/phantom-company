@@ -1,0 +1,29 @@
+{
+  "name": "Phantom Company",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "24"
+    }
+  },
+  "forwardPorts": [5173, 8080],
+  "portsAttributes": {
+    "5173": {
+      "label": "Game"
+    },
+    "8080": {
+      "label": "API"
+    }
+  },
+  "postCreateCommand": "cd frontend && npm ci && cd ../backend && ./gradlew dependencies",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "fwcd.kotlin",
+        "vscode.gradle"
+      ]
+    }
+  }
+}

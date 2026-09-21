@@ -1,0 +1,31 @@
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/java:1-21-bookworm
+    volumes:
+      - ..:/workspaces/${localWorkspaceFolderBasename}:cached
+    command: sleep infinity
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PHANTOM_DB_URL: jdbc:postgresql://db:5432/phantom_company
+      PHANTOM_DB_USER: phantom_app
+      PHANTOM_DB_PASSWORD: phantom_dev_password
+
+  db:
+    image: postgres:18
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: phantom_company
+      POSTGRES_USER: phantom_app
+      POSTGRES_PASSWORD: phantom_dev_password
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U phantom_app -d phantom_company"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres-data:
