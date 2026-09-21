@@ -1,8 +1,8 @@
 services:
   app:
-    image: mcr.microsoft.com/devcontainers/java:1-21-bookworm
+    image: mcr.microsoft.com/devcontainers/java:21-bookworm
     volumes:
-      - ..:/workspaces/${localWorkspaceFolderBasename}:cached
+      - ../..:/workspaces:cached
     command: sleep infinity
     depends_on:
       db:

@@ -4,7 +4,7 @@
   "service": "app",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {
+    "ghcr.io/devcontainers/features/node:2": {
       "version": "24"
     }
   },
@@ -17,13 +17,16 @@
       "label": "API"
     }
   },
-  "postCreateCommand": "cd frontend && npm ci && cd ../backend && ./gradlew dependencies",
+  "postCreateCommand": "npm --prefix frontend ci && ./backend/gradlew --project-dir backend test",
   "customizations": {
     "vscode": {
       "extensions": [
         "fwcd.kotlin",
-        "vscode.gradle"
-      ]
+        "vscjava.vscode-gradle"
+      ],
+      "settings": {
+        "gradle.nestedProjects": true
+      }
     }
   }
 }

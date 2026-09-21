@@ -29,3 +29,9 @@ npm run dev
 The frontend normally runs at `http://127.0.0.1:5173`; the API health check is at `http://127.0.0.1:8080/api/health`.
 
 See [TRAVEL_DEVELOPMENT.md](TRAVEL_DEVELOPMENT.md) for the full offline workflow and backup commands.
+
+## GitHub Codespaces
+
+From the repository page, select **Code → Codespaces → Create codespace on main**. The checked-in development container provisions Java 21, Node 24, and a persistent PostgreSQL 18 database, then installs frontend dependencies and runs the backend tests.
+
+Inside the codespace, start the backend and frontend in separate terminals using the same commands shown above. Codespaces forwards the game and API ports automatically.
