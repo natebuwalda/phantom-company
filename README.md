@@ -8,6 +8,7 @@ A browser-playable guild-management prototype with a TypeScript/React frontend, 
 - `backend/` — Ktor API, PostgreSQL persistence, migrations, and tests
 - `sources/` — game design and planning reference material
 - `TRAVEL_DEVELOPMENT.md` — local and offline development workflow
+- `HANDOFF.md` — current status, known-red acceptance test, and ordered next steps
 
 ## Quick start
 
@@ -29,6 +30,7 @@ npm run dev
 The frontend normally runs at `http://127.0.0.1:5173`; the API health check is at `http://127.0.0.1:8080/api/health`.
 
 See [TRAVEL_DEVELOPMENT.md](TRAVEL_DEVELOPMENT.md) for the full offline workflow and backup commands.
+If you are resuming development, start with [HANDOFF.md](HANDOFF.md).
 
 ## GitHub Codespaces
 
